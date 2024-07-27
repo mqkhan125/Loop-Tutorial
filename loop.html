@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        <script>
+            // while loop
+            let i = 30;
+            while (i <= 100) {
+                document.write(i + "<br>");
+                i++;
+            }
+
+            // do/while loop
+            let a = 1;
+            do {
+                document.write(a + "<br>");
+                a++;
+            } while (a <= 5);
+
+            // do/while loop live example
+            {
+                let password;
+                do {
+                    password = prompt("What is the passcode?");
+                } while (password !== 'M Qasim khan');
+            }
+
+            // for loop 
+            for (let j = 1; j <= 5; j++) {
+                document.write(j + "<br>");
+            }
+
+            // for loop even
+            for (let k = 0; k <= 100; k++) {
+                if (k % 2 === 0) {
+                    document.write(k + "<br>");
+                }
+                document.write (k + '<br>');
+            }
+
+            
+
+            // for loop odd
+            for (let l = 1; l <= 10; l++) {
+                if (l % 2 !== 0) {
+                    document.write(l + "<br>");
+                }
+                document.write(l + "<br>");
+            }
+
+            
+            // Continue and break in for loop
+            for (let counter = 1; counter <= 10; counter++) {
+                if (counter == 5) {
+                    continue;
+                }
+                document.write(counter + "<br>");
+            }
+
+            for (let count = 1; count <= 10; count++) {
+                if (count == 5) {
+                    break;
+                }
+                document.write(count + "<br>");
+            }
+
+            document.write('done');
+        </script>
+    </h1>
+</body>
+</html>

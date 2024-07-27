@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table With UI </title>
+</head>
+<body>
+    <input type="text" placeholder="Enter the number" id="inp">
+    <button onclick="MyTable()">Table</button>
+
+    <script>
+        function MyTable()
+        {
+            let table = document.getElementById('inp').value;
+            for(let i=0; i<=(table*10); i++){
+                if(i%table ==0 ){
+                    document.write(i + "<br>")
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>
